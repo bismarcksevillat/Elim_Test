@@ -1,6 +1,5 @@
-
-.home-container{
-  header{
+.home-container {
+  header {
     position: absolute;
     top: 0px;
     left: 0px;
@@ -8,32 +7,41 @@
     bottom: auto;
     z-index: 100;
 
-    .menu-button{
-
-      a{
+    .menu-button {
+      a {
         width: 63pt;
         height: 63pt;
         background-color: #121c4e;
         padding-left: 10px;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
+        -ms-flex-pack: distribute;
         justify-content: space-around;
+        -webkit-box-align: start;
+        -ms-flex-align: start;
         align-items: flex-start;
 
-        span{
+        span {
           height: 4pt;
           background-color: $white;
+          -webkit-box-flex: 0;
+          -ms-flex: 0 1 auto;
           flex: 0 1 auto;
 
-          &.line-1{
+          &.line-1 {
             width: 21pt;
           }
 
-          &.line-2{
+          &.line-2 {
             width: 31pt;
           }
 
-          &.line-3{
+          &.line-3 {
             width: 41pt;
           }
         }
@@ -41,23 +49,23 @@
     }
   }
 
-  .adp-datacloud{
+  .adp-datacloud {
     position: relative;
     // width: 20%;
     height: 80vh;
     background-color: #cfcfcf;
 
-    .text-container{
+    .text-container {
       padding-top: 100pt;
 
-      h1{
+      h1 {
         font-size: 24pt;
         margin: 0px;
         padding-bottom: 16pt;
         text-align: center;
       }
 
-      p{
+      p {
         font-size: 12pt;
         margin: 0px;
         width: 145pt;
@@ -71,34 +79,124 @@
     background-repeat: no-repeat;
     background-size: cover;
 
-    @keyframes animatedBackground {
-      0% { background-position: 0 0; }
-      5% { background-position: 20% 0; }
-      10% { background-position: 50% 0; }
-      15% { background-position: 45% 0; }
-      25% { background-position: 60% 0; }
-      30% { background-position: 45% 0; }
-      35% { background-position: 40% 0; }
-      40% { background-position: 42% 0; }
-      50% { background-position: 60% 0; }
-      55% { background-position: 62% 0; }
-      60% { background-position: 70% 0; }
-      65% { background-position: 68% 0; }
-      70% { background-position: 72% 0; }
-      75% { background-position: 65% 0; }
-      75% { background-position: 100% 0; }
-      90% { background-position: 85% 0; }
-      95% { background-position: 90% 0; }
+    @-webkit-keyframes animatedBackground {
+      0% {
+        background-position: 0 0;
+      }
+      5% {
+        background-position: 20% 0;
+      }
+      10% {
+        background-position: 50% 0;
+      }
+      15% {
+        background-position: 45% 0;
+      }
+      25% {
+        background-position: 60% 0;
+      }
+      30% {
+        background-position: 45% 0;
+      }
+      35% {
+        background-position: 40% 0;
+      }
+      40% {
+        background-position: 42% 0;
+      }
+      50% {
+        background-position: 60% 0;
+      }
+      55% {
+        background-position: 62% 0;
+      }
+      60% {
+        background-position: 70% 0;
+      }
+      65% {
+        background-position: 68% 0;
+      }
+      70% {
+        background-position: 72% 0;
+      }
+      75% {
+        background-position: 65% 0;
+      }
+      75% {
+        background-position: 100% 0;
+      }
+      90% {
+        background-position: 85% 0;
+      }
+      95% {
+        background-position: 90% 0;
+      }
     }
+
+    @keyframes animatedBackground {
+      0% {
+        background-position: 0 0;
+      }
+      5% {
+        background-position: 20% 0;
+      }
+      10% {
+        background-position: 50% 0;
+      }
+      15% {
+        background-position: 45% 0;
+      }
+      25% {
+        background-position: 60% 0;
+      }
+      30% {
+        background-position: 45% 0;
+      }
+      35% {
+        background-position: 40% 0;
+      }
+      40% {
+        background-position: 42% 0;
+      }
+      50% {
+        background-position: 60% 0;
+      }
+      55% {
+        background-position: 62% 0;
+      }
+      60% {
+        background-position: 70% 0;
+      }
+      65% {
+        background-position: 68% 0;
+      }
+      70% {
+        background-position: 72% 0;
+      }
+      75% {
+        background-position: 65% 0;
+      }
+      75% {
+        background-position: 100% 0;
+      }
+      90% {
+        background-position: 85% 0;
+      }
+      95% {
+        background-position: 90% 0;
+      }
+    }
+
+    -webkit-animation: animatedBackground 20s linear infinite;
 
     animation: animatedBackground 20s linear infinite;
   }
 
-  .future-tech{
+  .future-tech {
     padding-top: 40pt;
 
-    .title-container{
-      h2{
+    .title-container {
+      h2 {
         font-size: 50pt;
         font-family: $secondary-font;
         margin: 0px;
@@ -109,48 +207,63 @@
 }
 
 @media (min-width: 992px) {
-
-  .home-container{
+  .home-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
     flex-direction: row;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
     justify-content: flex-start;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
     align-items: flex-start;
 
-    .adp-datacloud{
+    .adp-datacloud {
       width: 216pt;
       padding-left: 30pt;
       height: 100vh;
 
-      .text-container{
-
-        h1{
+      .text-container {
+        h1 {
           text-align: left;
         }
 
-        p{
+        p {
           text-align: left;
           margin-left: 0px;
         }
       }
     }
 
-    .future-tech{
+    .future-tech {
+      -webkit-box-flex: 1;
+      -ms-flex: 1;
       flex: 1;
     }
   }
 }
 
-
+// Title animation
 $delay: 0.05s;
+$chars: 21;
 
-@for $i from 1 through 13 {
-  h1 {
+@for $i from 1 through $chars {
+  #future-title {
     span {
-      "&.char#{$i}" {
-        display: inline-block;
+      display: inline-block;
+
+      &.char#{$i} {
+        @if $i == 4 or $i == 11 or $i == 14 or $i == 17 {
+          display: inline;
+        }
 
         -webkit-animation: fade-in-bottom 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) both;
         animation: fade-in-bottom 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+        -webkit-animation-delay: #{$delay};
         animation-delay: #{$delay};
         $delay: $delay + 0.05s;
       }
@@ -158,16 +271,6 @@ $delay: 0.05s;
   }
 }
 
-@keyframes ninon {
-  from {
-    transform: translateY(10px);
-    opacity: 0;
-  }
-  to {
-    transform: translateY(0px);
-    opacity: 1;
-  }
-}
 
 @-webkit-keyframes fade-in-bottom {
   0% {
