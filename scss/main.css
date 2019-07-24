@@ -195,7 +195,7 @@ ul.aligned-list {
   width: 63pt;
   height: 63pt;
   background-color: #121c4e;
-  padding-left: 10px;
+  padding: 10pt;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -371,6 +371,7 @@ ul.aligned-list {
 
 .home-container .future-tech {
   padding-top: 40pt;
+  width: 100vw;
 }
 
 .home-container .future-tech .title-container h2 {
@@ -380,106 +381,72 @@ ul.aligned-list {
   text-align: center;
 }
 
-.bottom-container {
-  width: 50vw;
-  margin: 0 auto;
+.home-container .future-tech .bottom-container {
+  width: 100%;
   position: relative;
 }
 
-.bottom-container .middle-div {
+.home-container .future-tech .bottom-container .titles-to-appear h3 {
+  opacity: 1;
+  margin: 0;
+  text-align: center;
+  font-size: 18pt;
+  padding: 0pt 5pt 8pt;
+}
+
+.home-container .future-tech .bottom-container .text-to-appear {
+  position: relative;
+  height: 220pt;
+  width: 100%;
+}
+
+.home-container .future-tech .bottom-container .text-to-appear p {
+  margin: 0;
+  text-align: center;
+  font-size: 12pt;
+  position: absolute;
+  top: 120pt;
+  bottom: auto;
+  left: 0%;
+  right: 0%;
+  padding: 0pt 10pt;
+}
+
+.home-container .future-tech .bottom-container .text-to-appear .titles-to-appear {
+  position: absolute;
+  top: 0%;
+  bottom: auto;
+  right: 0%;
+  left: 0%;
+}
+
+.home-container .future-tech .bottom-container .text-to-appear .titles-to-appear h3 {
+  opacity: 0;
+}
+
+.home-container .future-tech .bottom-container .middle-div {
   position: relative;
 }
 
-.bottom-container .middle-div .icons-container {
-  position: absolute;
-  background-color: #ffffff;
-  border: 2px dashed #121c4e;
-  width: 60pt;
-  height: 60pt;
-  border-radius: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  z-index: 1;
-  margin: 0 auto;
+.home-container .future-tech .bottom-container .middle-div .icons-container {
+  display: none;
 }
 
-.bottom-container .middle-div .icons-container .blue-div {
-  background-color: #121c4e;
-  width: 50pt;
-  height: 50pt;
-  border-radius: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin: 0 auto;
+.home-container .future-tech .bottom-container .middle-div .cellphone-circle-container {
+  position: relative;
 }
 
-.bottom-container .middle-div .icons-container#data-icon {
-  top: 50%;
-  left: 0%;
-  -webkit-transform: translate(-22%, -60%);
-          transform: translate(-22%, -60%);
-}
-
-.bottom-container .middle-div .icons-container#executive-icon {
-  bottom: 0%;
-  left: 0%;
-  right: 0%;
-}
-
-.bottom-container .middle-div .icons-container#reporting-icon {
-  top: -3%;
-  left: 0%;
-  right: 0%;
-}
-
-.bottom-container .middle-div .icons-container#benchmarking-icon {
-  top: 50%;
-  right: 0%;
-  -webkit-transform: translate(25%, -52%);
-          transform: translate(25%, -52%);
-}
-
-.bottom-container .middle-div .cellphone-circle-container {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-}
-
-.bottom-container .middle-div .cellphone-circle-container .cellphone {
+.home-container .future-tech .bottom-container .middle-div .cellphone-circle-container .cellphone {
   padding-left: 50px;
   position: relative;
 }
 
-.bottom-container .middle-div .cellphone-circle-container .cellphone img {
+.home-container .future-tech .bottom-container .middle-div .cellphone-circle-container .cellphone img {
   z-index: 5;
   position: relative;
 }
 
-.bottom-container .middle-div .cellphone-circle-container .cellphone::after {
+.home-container .future-tech .bottom-container .middle-div .cellphone-circle-container .cellphone::after {
   width: 300px;
   height: 300px;
   content: "";
@@ -493,7 +460,7 @@ ul.aligned-list {
   z-index: 1;
 }
 
-.bottom-container .middle-div .cellphone-circle-container .cellphone::before {
+.home-container .future-tech .bottom-container .middle-div .cellphone-circle-container .cellphone::before {
   width: 270px;
   height: 270px;
   content: "";
@@ -507,23 +474,24 @@ ul.aligned-list {
   z-index: 2;
 }
 
-.dotted-line-container {
+.home-container .future-tech .dotted-line-container {
   position: relative;
   width: 100%;
+  display: none;
 }
 
-.dotted-line-container svg {
+.home-container .future-tech .dotted-line-container svg {
   overflow: inherit;
 }
 
-.dotted-line-container svg#dotted-svg .cls-1 {
+.home-container .future-tech .dotted-line-container svg#dotted-svg .cls-1 {
   fill: #000;
   stroke-miterlimit: 0;
   opacity: 1;
   scale: 0.93;
 }
 
-.straight-line-container {
+.home-container .future-tech .straight-line-container {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -531,13 +499,14 @@ ul.aligned-list {
           transform: translate(-50%, -50%);
   width: 93%;
   margin: 0 auto;
+  display: none;
 }
 
-.straight-line-container svg {
+.home-container .future-tech .straight-line-container svg {
   overflow: inherit;
 }
 
-.straight-line-container svg .cls-1 {
+.home-container .future-tech .straight-line-container svg .cls-1 {
   opacity: 1;
 }
 
@@ -573,6 +542,208 @@ ul.aligned-list {
     -webkit-box-flex: 1;
     -ms-flex: 1;
     flex: 1;
+  }
+  .home-container .future-tech .bottom-container {
+    width: 705px;
+    margin: 0 auto;
+    position: relative;
+    padding: 50pt 0pt;
+  }
+  .home-container .future-tech .bottom-container .titles-to-appear {
+    position: absolute;
+  }
+  .home-container .future-tech .bottom-container .titles-to-appear.executive-title {
+    bottom: 0%;
+    right: 0%;
+    left: 0%;
+  }
+  .home-container .future-tech .bottom-container .titles-to-appear.reporting-title {
+    top: 0%;
+    right: 0%;
+    left: 0%;
+  }
+  .home-container .future-tech .bottom-container .titles-to-appear.benchmarking-title {
+    top: 50%;
+    right: 0px;
+    -webkit-transform: translate(0%, -50%);
+            transform: translate(0%, -50%);
+  }
+  .home-container .future-tech .bottom-container .titles-to-appear.data-title {
+    top: 50%;
+    left: 0px;
+    -webkit-transform: translate(0%, -50%);
+            transform: translate(0%, -50%);
+  }
+  .home-container .future-tech .bottom-container .text-to-appear {
+    position: absolute;
+    bottom: 0%;
+    right: 0%;
+    width: 40%;
+    height: 150pt;
+  }
+  .home-container .future-tech .bottom-container .text-to-appear p {
+    text-align: left;
+    top: 25pt;
+    font-size: 10pt;
+  }
+  .home-container .future-tech .bottom-container .text-to-appear .titles-to-appear {
+    position: absolute;
+    top: 0%;
+  }
+  .home-container .future-tech .bottom-container .text-to-appear .titles-to-appear.executive-title {
+    bottom: 0%;
+    right: 0%;
+    left: 0%;
+  }
+  .home-container .future-tech .bottom-container .text-to-appear .titles-to-appear.reporting-title {
+    top: 0%;
+    right: 0%;
+    left: 0%;
+  }
+  .home-container .future-tech .bottom-container .text-to-appear .titles-to-appear.benchmarking-title {
+    top: 0%;
+    right: 0px;
+    -webkit-transform: none;
+            transform: none;
+  }
+  .home-container .future-tech .bottom-container .text-to-appear .titles-to-appear.data-title {
+    top: 0%;
+    left: 0px;
+    -webkit-transform: none;
+            transform: none;
+  }
+  .home-container .future-tech .bottom-container .text-to-appear .titles-to-appear h3 {
+    text-align: left;
+  }
+  .home-container .future-tech .bottom-container .middle-div {
+    position: relative;
+    width: 50%;
+    margin: 0 auto;
+  }
+  .home-container .future-tech .bottom-container .middle-div .icons-container {
+    position: absolute;
+    background-color: #ffffff;
+    border: 2px dashed #121c4e;
+    width: 40pt;
+    height: 40pt;
+    border-radius: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    z-index: 1;
+    margin: 0 auto;
+  }
+  .home-container .future-tech .bottom-container .middle-div .icons-container .blue-div {
+    background-color: #121c4e;
+    width: 30pt;
+    height: 30pt;
+    border-radius: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 0 auto;
+  }
+  .home-container .future-tech .bottom-container .middle-div .icons-container#data-icon {
+    top: 50%;
+    left: 0%;
+    -webkit-transform: translate(-22%, -60%);
+            transform: translate(-22%, -60%);
+  }
+  .home-container .future-tech .bottom-container .middle-div .icons-container#executive-icon {
+    bottom: -2%;
+    left: 0%;
+    right: 0%;
+  }
+  .home-container .future-tech .bottom-container .middle-div .icons-container#reporting-icon {
+    top: -3%;
+    left: 0%;
+    right: 0%;
+  }
+  .home-container .future-tech .bottom-container .middle-div .icons-container#benchmarking-icon {
+    top: 50%;
+    right: 0%;
+    -webkit-transform: translate(25%, -52%);
+            transform: translate(25%, -52%);
+  }
+  .home-container .future-tech .bottom-container .middle-div .cellphone-circle-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+  .home-container .future-tech .bottom-container .middle-div .cellphone-circle-container .cellphone {
+    padding-left: 18%;
+    position: relative;
+  }
+  .home-container .future-tech .bottom-container .middle-div .cellphone-circle-container .cellphone img {
+    z-index: 5;
+    position: relative;
+  }
+  .home-container .future-tech .bottom-container .middle-div .cellphone-circle-container .cellphone::after {
+    width: 175px;
+    height: 175px;
+  }
+  .home-container .future-tech .bottom-container .middle-div .cellphone-circle-container .cellphone::before {
+    width: 145px;
+    height: 145px;
+  }
+  .home-container .future-tech .dotted-line-container {
+    display: block;
+  }
+  .home-container .future-tech .straight-line-container {
+    display: block;
+  }
+}
+
+@media (min-width: 1200px) {
+  .home-container .future-tech .bottom-container {
+    width: 930px;
+  }
+  .home-container .future-tech .bottom-container .text-to-appear {
+    position: absolute;
+    bottom: 0%;
+    right: 0%;
+  }
+  .home-container .future-tech .bottom-container .middle-div {
+    width: 60%;
+    margin: 0 auto;
+  }
+  .home-container .future-tech .bottom-container .middle-div .icons-container {
+    width: 60pt;
+    height: 60pt;
+  }
+  .home-container .future-tech .bottom-container .middle-div .icons-container .blue-div {
+    width: 50pt;
+    height: 50pt;
+  }
+  .home-container .future-tech .bottom-container .middle-div .cellphone-circle-container .cellphone::after {
+    width: 300px;
+    height: 300px;
+  }
+  .home-container .future-tech .bottom-container .middle-div .cellphone-circle-container .cellphone::before {
+    width: 270px;
+    height: 270px;
   }
 }
 
