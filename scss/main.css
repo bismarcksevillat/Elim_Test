@@ -576,239 +576,165 @@ ul.aligned-list {
   }
 }
 
-#future-title span {
-  display: inline-block;
+#future-title span.word1 {
+  white-space: nowrap;
+  display: inline;
 }
 
-#future-title span.char1 {
+#future-title span.word1 .char1 {
+  display: inline-block;
   -webkit-animation: fade-in-bottom 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) both;
   animation: fade-in-bottom 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) both;
   -webkit-animation-delay: 0.05s;
   animation-delay: 0.05s;
 }
 
-#future-title span {
+#future-title span.word1 .char2 {
   display: inline-block;
-}
-
-#future-title span.char2 {
   -webkit-animation: fade-in-bottom 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) both;
   animation: fade-in-bottom 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) both;
   -webkit-animation-delay: 0.1s;
   animation-delay: 0.1s;
 }
 
-#future-title span {
+#future-title span.word1 .char3 {
   display: inline-block;
-}
-
-#future-title span.char3 {
   -webkit-animation: fade-in-bottom 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) both;
   animation: fade-in-bottom 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) both;
   -webkit-animation-delay: 0.15s;
   animation-delay: 0.15s;
 }
 
-#future-title span {
-  display: inline-block;
+#future-title span.word2 {
+  white-space: nowrap;
+  display: inline;
 }
 
-#future-title span.char4 {
-  display: inline;
+#future-title span.word2 .char1 {
+  display: inline-block;
   -webkit-animation: fade-in-bottom 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) both;
   animation: fade-in-bottom 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) both;
   -webkit-animation-delay: 0.2s;
   animation-delay: 0.2s;
 }
 
-#future-title span {
+#future-title span.word2 .char2 {
   display: inline-block;
-}
-
-#future-title span.char5 {
   -webkit-animation: fade-in-bottom 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) both;
   animation: fade-in-bottom 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) both;
   -webkit-animation-delay: 0.25s;
   animation-delay: 0.25s;
 }
 
-#future-title span {
+#future-title span.word2 .char3 {
   display: inline-block;
-}
-
-#future-title span.char6 {
   -webkit-animation: fade-in-bottom 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) both;
   animation: fade-in-bottom 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) both;
   -webkit-animation-delay: 0.3s;
   animation-delay: 0.3s;
 }
 
-#future-title span {
+#future-title span.word2 .char4 {
   display: inline-block;
-}
-
-#future-title span.char7 {
   -webkit-animation: fade-in-bottom 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) both;
   animation: fade-in-bottom 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) both;
   -webkit-animation-delay: 0.35s;
   animation-delay: 0.35s;
 }
 
-#future-title span {
+#future-title span.word2 .char5 {
   display: inline-block;
-}
-
-#future-title span.char8 {
   -webkit-animation: fade-in-bottom 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) both;
   animation: fade-in-bottom 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) both;
   -webkit-animation-delay: 0.4s;
   animation-delay: 0.4s;
 }
 
-#future-title span {
+#future-title span.word2 .char6 {
   display: inline-block;
-}
-
-#future-title span.char9 {
   -webkit-animation: fade-in-bottom 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) both;
   animation: fade-in-bottom 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) both;
   -webkit-animation-delay: 0.45s;
   animation-delay: 0.45s;
 }
 
-#future-title span {
-  display: inline-block;
+#future-title span.word3 {
+  white-space: nowrap;
+  display: inline;
 }
 
-#future-title span.char10 {
+#future-title span.word3 .char1 {
+  display: inline-block;
   -webkit-animation: fade-in-bottom 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) both;
   animation: fade-in-bottom 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) both;
   -webkit-animation-delay: 0.5s;
   animation-delay: 0.5s;
 }
 
-#future-title span {
+#future-title span.word3 .char2 {
   display: inline-block;
-}
-
-#future-title span.char11 {
-  display: inline;
   -webkit-animation: fade-in-bottom 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) both;
   animation: fade-in-bottom 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) both;
   -webkit-animation-delay: 0.55s;
   animation-delay: 0.55s;
 }
 
-#future-title span {
-  display: inline-block;
+#future-title span.word4 {
+  white-space: nowrap;
+  display: inline;
 }
 
-#future-title span.char12 {
+#future-title span.word4 .char1 {
+  display: inline-block;
   -webkit-animation: fade-in-bottom 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) both;
   animation: fade-in-bottom 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) both;
   -webkit-animation-delay: 0.6s;
   animation-delay: 0.6s;
 }
 
-#future-title span {
+#future-title span.word4 .char2 {
   display: inline-block;
-}
-
-#future-title span.char13 {
   -webkit-animation: fade-in-bottom 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) both;
   animation: fade-in-bottom 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) both;
   -webkit-animation-delay: 0.65s;
   animation-delay: 0.65s;
 }
 
-#future-title span {
-  display: inline-block;
+#future-title span.word5 {
+  white-space: nowrap;
+  display: inline;
 }
 
-#future-title span.char14 {
-  display: inline;
+#future-title span.word5 .char1 {
+  display: inline-block;
   -webkit-animation: fade-in-bottom 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) both;
   animation: fade-in-bottom 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) both;
   -webkit-animation-delay: 0.7s;
   animation-delay: 0.7s;
 }
 
-#future-title span {
+#future-title span.word5 .char2 {
   display: inline-block;
-}
-
-#future-title span.char15 {
   -webkit-animation: fade-in-bottom 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) both;
   animation: fade-in-bottom 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) both;
   -webkit-animation-delay: 0.75s;
   animation-delay: 0.75s;
 }
 
-#future-title span {
+#future-title span.word5 .char3 {
   display: inline-block;
-}
-
-#future-title span.char16 {
   -webkit-animation: fade-in-bottom 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) both;
   animation: fade-in-bottom 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) both;
   -webkit-animation-delay: 0.8s;
   animation-delay: 0.8s;
 }
 
-#future-title span {
+#future-title span.word5 .char4 {
   display: inline-block;
-}
-
-#future-title span.char17 {
-  display: inline;
   -webkit-animation: fade-in-bottom 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) both;
   animation: fade-in-bottom 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) both;
   -webkit-animation-delay: 0.85s;
   animation-delay: 0.85s;
-}
-
-#future-title span {
-  display: inline-block;
-}
-
-#future-title span.char18 {
-  -webkit-animation: fade-in-bottom 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) both;
-  animation: fade-in-bottom 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) both;
-  -webkit-animation-delay: 0.9s;
-  animation-delay: 0.9s;
-}
-
-#future-title span {
-  display: inline-block;
-}
-
-#future-title span.char19 {
-  -webkit-animation: fade-in-bottom 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) both;
-  animation: fade-in-bottom 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) both;
-  -webkit-animation-delay: 0.95s;
-  animation-delay: 0.95s;
-}
-
-#future-title span {
-  display: inline-block;
-}
-
-#future-title span.char20 {
-  -webkit-animation: fade-in-bottom 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) both;
-  animation: fade-in-bottom 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) both;
-  -webkit-animation-delay: 1s;
-  animation-delay: 1s;
-}
-
-#future-title span {
-  display: inline-block;
-}
-
-#future-title span.char21 {
-  -webkit-animation: fade-in-bottom 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) both;
-  animation: fade-in-bottom 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) both;
-  -webkit-animation-delay: 1.05s;
-  animation-delay: 1.05s;
 }
 
 @-webkit-keyframes fade-in-bottom {

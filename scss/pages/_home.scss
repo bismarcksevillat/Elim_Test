@@ -214,7 +214,7 @@
   .middle-div {
     position: relative;
 
-    .icons-container{
+    .icons-container {
       position: absolute;
       background-color: #ffffff;
       border: 2px dashed #121c4e;
@@ -228,7 +228,7 @@
       z-index: 1;
       margin: 0 auto;
 
-      .blue-div{
+      .blue-div {
         background-color: #121c4e;
         width: 50pt;
         height: 50pt;
@@ -240,25 +240,25 @@
         margin: 0 auto;
       }
 
-      &#data-icon{
+      &#data-icon {
         top: 50%;
         left: 0%;
         transform: translate(-22%, -60%);
       }
 
-      &#executive-icon{
+      &#executive-icon {
         bottom: 0%;
         left: 0%;
         right: 0%;
       }
 
-      &#reporting-icon{
+      &#reporting-icon {
         top: -3%;
         left: 0%;
         right: 0%;
       }
 
-      &#benchmarking-icon{
+      &#benchmarking-icon {
         top: 50%;
         right: 0%;
         transform: translate(25%, -52%);
@@ -275,7 +275,7 @@
         padding-left: 50px;
         position: relative;
 
-        img{
+        img {
           z-index: 5;
           position: relative;
         }
@@ -388,28 +388,59 @@
 }
 
 // Title animation
-$delay: 0.05s;
-$chars: 21;
 
-@for $i from 1 through $chars {
+$words: 5;
+$chars: (3, 6, 2, 2, 4);
+
+$delay: 0.05s;
+// $chars: 21;
+
+@for $j from 1 through $words {
   #future-title {
     span {
-      display: inline-block;
+      &.word#{$j} {
+        white-space: nowrap;
+        display: inline;
 
-      &.char#{$i} {
-        @if $i == 4 or $i == 11 or $i == 14 or $i == 17 {
-          display: inline;
+        @for $i from 1 through nth($chars, $j) {
+          .char#{$i} {
+            display: inline-block;
+
+            // @if $i == 4 or $i == 11 or $i == 14 or $i == 17 {
+            //   display: inline;
+            // }
+
+            -webkit-animation: fade-in-bottom 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+            animation: fade-in-bottom 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+            -webkit-animation-delay: #{$delay};
+            animation-delay: #{$delay};
+            $delay: $delay + 0.05s;
+          }
         }
-
-        -webkit-animation: fade-in-bottom 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) both;
-        animation: fade-in-bottom 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) both;
-        -webkit-animation-delay: #{$delay};
-        animation-delay: #{$delay};
-        $delay: $delay + 0.05s;
       }
     }
   }
 }
+
+// @for $i from 1 through $chars {
+//   #future-title {
+//     span {
+//         &.char#{$i} {
+//         display: inline-block;
+
+//         @if $i == 4 or $i == 11 or $i == 14 or $i == 17 {
+//           display: inline;
+//         }
+
+//         -webkit-animation: fade-in-bottom 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+//         animation: fade-in-bottom 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+//         -webkit-animation-delay: #{$delay};
+//         animation-delay: #{$delay};
+//         $delay: $delay + 0.05s;
+//       }
+//     }
+//   }
+// }
 
 @-webkit-keyframes fade-in-bottom {
   0% {
