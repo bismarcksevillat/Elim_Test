@@ -390,6 +390,77 @@ ul.aligned-list {
   position: relative;
 }
 
+.bottom-container .middle-div .icons-container {
+  position: absolute;
+  background-color: #ffffff;
+  border: 2px dashed #121c4e;
+  width: 60pt;
+  height: 60pt;
+  border-radius: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 1;
+  margin: 0 auto;
+}
+
+.bottom-container .middle-div .icons-container .blue-div {
+  background-color: #121c4e;
+  width: 50pt;
+  height: 50pt;
+  border-radius: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
+}
+
+.bottom-container .middle-div .icons-container#data-icon {
+  top: 50%;
+  left: 0%;
+  -webkit-transform: translate(-22%, -60%);
+          transform: translate(-22%, -60%);
+}
+
+.bottom-container .middle-div .icons-container#executive-icon {
+  bottom: 0%;
+  left: 0%;
+  right: 0%;
+}
+
+.bottom-container .middle-div .icons-container#reporting-icon {
+  top: -3%;
+  left: 0%;
+  right: 0%;
+}
+
+.bottom-container .middle-div .icons-container#benchmarking-icon {
+  top: 50%;
+  right: 0%;
+  -webkit-transform: translate(25%, -52%);
+          transform: translate(25%, -52%);
+}
+
 .bottom-container .middle-div .cellphone-circle-container {
   position: absolute;
   top: 50%;
@@ -398,23 +469,61 @@ ul.aligned-list {
           transform: translate(-50%, -50%);
 }
 
-.bottom-container .middle-div .dotted-line-container {
+.bottom-container .middle-div .cellphone-circle-container .cellphone {
+  padding-left: 50px;
+  position: relative;
+}
+
+.bottom-container .middle-div .cellphone-circle-container .cellphone img {
+  z-index: 5;
+  position: relative;
+}
+
+.bottom-container .middle-div .cellphone-circle-container .cellphone::after {
+  width: 300px;
+  height: 300px;
+  content: "";
+  background-color: rgba(31, 52, 127, 0.5);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -55%);
+          transform: translate(-50%, -55%);
+  border-radius: 100%;
+  z-index: 1;
+}
+
+.bottom-container .middle-div .cellphone-circle-container .cellphone::before {
+  width: 270px;
+  height: 270px;
+  content: "";
+  background-color: #1f347f;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -56%);
+          transform: translate(-50%, -56%);
+  border-radius: 100%;
+  z-index: 2;
+}
+
+.dotted-line-container {
   position: relative;
   width: 100%;
 }
 
-.bottom-container .middle-div .dotted-line-container svg {
+.dotted-line-container svg {
   overflow: inherit;
 }
 
-.bottom-container .middle-div .dotted-line-container svg#dotted-svg .cls-1 {
+.dotted-line-container svg#dotted-svg .cls-1 {
   fill: #000;
   stroke-miterlimit: 0;
   opacity: 1;
   scale: 0.93;
 }
 
-.bottom-container .middle-div .straight-line-container {
+.straight-line-container {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -424,11 +533,11 @@ ul.aligned-list {
   margin: 0 auto;
 }
 
-.bottom-container .middle-div .straight-line-container svg {
+.straight-line-container svg {
   overflow: inherit;
 }
 
-.bottom-container .middle-div .straight-line-container svg .cls-1 {
+.straight-line-container svg .cls-1 {
   opacity: 1;
 }
 
