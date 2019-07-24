@@ -380,6 +380,58 @@ ul.aligned-list {
   text-align: center;
 }
 
+.bottom-container {
+  width: 50vw;
+  margin: 0 auto;
+  position: relative;
+}
+
+.bottom-container .middle-div {
+  position: relative;
+}
+
+.bottom-container .middle-div .cellphone-circle-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.bottom-container .middle-div .dotted-line-container {
+  position: relative;
+  width: 100%;
+}
+
+.bottom-container .middle-div .dotted-line-container svg {
+  overflow: inherit;
+}
+
+.bottom-container .middle-div .dotted-line-container svg#dotted-svg .cls-1 {
+  fill: #000;
+  stroke-miterlimit: 0;
+  opacity: 1;
+  scale: 0.93;
+}
+
+.bottom-container .middle-div .straight-line-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 93%;
+  margin: 0 auto;
+}
+
+.bottom-container .middle-div .straight-line-container svg {
+  overflow: inherit;
+}
+
+.bottom-container .middle-div .straight-line-container svg .cls-1 {
+  opacity: 1;
+}
+
 @media (min-width: 992px) {
   .home-container {
     display: -webkit-box;
