@@ -48,24 +48,24 @@
         <div class="bottom-container">
           <!-- Text to appear -->
           <div class="text-to-appear">
-          <!-- Executive & Manager Insights -->
-          <div class="titles-to-appear executive-title">
+            <!-- Executive & Manager Insights -->
+            <div class="titles-to-appear executive-title">
               <h3>Executive & Manager Insights</h3>
             </div>
             <!-- end of Executive & Manager Insights -->
-  
+
             <!--   Data Explorers -->
             <div class="titles-to-appear data-title">
               <h3>Data Explorers</h3>
             </div>
             <!-- end of Data Explorers -->
-  
+
             <!--   Reporting & Analytics -->
             <div class="titles-to-appear reporting-title">
               <h3>Reporting & Analytics</h3>
             </div>
             <!-- end of Reporting & Analytics -->
-  
+
             <!--   Benchmarking -->
             <div class="titles-to-appear benchmarking-title">
               <h3>Benchmarking</h3>
@@ -81,25 +81,25 @@
           <!-- end of Text to appear -->
 
           <!-- Executive & Manager Insights -->
-          <div class="titles-to-appear executive-title">
+          <div class="titles-to-appear" id="executive-title">
             <h3>Executive & Manager Insights</h3>
           </div>
           <!-- end of Executive & Manager Insights -->
 
           <!--   Data Explorers -->
-          <div class="titles-to-appear data-title">
+          <div class="titles-to-appear" id="data-title">
             <h3>Data Explorers</h3>
           </div>
           <!-- end of Data Explorers -->
 
           <!--   Reporting & Analytics -->
-          <div class="titles-to-appear reporting-title">
+          <div class="titles-to-appear" id="reporting-title">
             <h3>Reporting & Analytics</h3>
           </div>
           <!-- end of Reporting & Analytics -->
 
           <!--   Benchmarking -->
-          <div class="titles-to-appear benchmarking-title">
+          <div class="titles-to-appear" id="benchmarking-title">
             <h3>Benchmarking</h3>
           </div>
           <!-- end of Benchmarking -->
@@ -404,26 +404,13 @@
 
             <!-- Straight line -->
             <div class="straight-line-container">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 528.02 528.02">
-                <defs>
-                  <style>
-                    .cls-1 {
-                      fill: none;
-                      stroke: #000;
-                      stroke-miterlimit: 10;
-                      stroke-width: 5px;
-                      opacity: 0.46;
-                    }
-                  </style>
-                </defs>
-                <g id="Layer_2" data-name="Layer 2">
-                  <g id="DataCloud_Home">
-                    <path
-                      class="cls-1"
-                      d="M264.23,525.52H264C120.55,525.52,2.5,407.47,2.5,264S120.55,2.5,264,2.5,525.52,120.55,525.52,264"
-                    />
-                  </g>
-                </g>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 528.02 528.02" id="straight-svg">
+                <path id="circle-svg"
+                  stroke-width="3"
+                  stroke="#000"
+                  fill="none"
+                  d="M264.23,525.52H264C120.55,525.52,2.5,407.47,2.5,264S120.55,2.5,264,2.5,525.52,120.55,525.52,264"
+                />
               </svg>
             </div>
             <!-- end of Straight line -->
@@ -462,8 +449,14 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/plugins/CSSPlugin.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/plugins/CSSRulePlugin.min.js"></script>
+
     <!-- Lettering -->
     <script src="js/jquery.lettering.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vivus/0.4.4/vivus.min.js"></script>
 
     <script src="js/index.js"></script>
   </body>

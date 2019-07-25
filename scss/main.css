@@ -508,7 +508,7 @@ ul.aligned-list {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  width: 93%;
+  width: 95%;
   margin: 0 auto;
   display: none;
 }
@@ -564,23 +564,23 @@ ul.aligned-list {
   .home-container .future-tech .bottom-container .titles-to-appear {
     position: absolute;
   }
-  .home-container .future-tech .bottom-container .titles-to-appear.executive-title {
+  .home-container .future-tech .bottom-container .titles-to-appear#executive-title {
     bottom: 0%;
     right: 0%;
     left: 0%;
   }
-  .home-container .future-tech .bottom-container .titles-to-appear.reporting-title {
+  .home-container .future-tech .bottom-container .titles-to-appear#reporting-title {
     top: 0%;
     right: 0%;
     left: 0%;
   }
-  .home-container .future-tech .bottom-container .titles-to-appear.benchmarking-title {
+  .home-container .future-tech .bottom-container .titles-to-appear#benchmarking-title {
     top: 50%;
     right: 0px;
     -webkit-transform: translate(0%, -50%);
             transform: translate(0%, -50%);
   }
-  .home-container .future-tech .bottom-container .titles-to-appear.data-title {
+  .home-container .future-tech .bottom-container .titles-to-appear#data-title {
     top: 50%;
     left: 0px;
     -webkit-transform: translate(0%, -50%);
@@ -602,23 +602,23 @@ ul.aligned-list {
     position: absolute;
     top: 0%;
   }
-  .home-container .future-tech .bottom-container .text-to-appear .titles-to-appear.executive-title {
+  .home-container .future-tech .bottom-container .text-to-appear .titles-to-appear#executive-title {
     bottom: 0%;
     right: 0%;
     left: 0%;
   }
-  .home-container .future-tech .bottom-container .text-to-appear .titles-to-appear.reporting-title {
+  .home-container .future-tech .bottom-container .text-to-appear .titles-to-appear#reporting-title {
     top: 0%;
     right: 0%;
     left: 0%;
   }
-  .home-container .future-tech .bottom-container .text-to-appear .titles-to-appear.benchmarking-title {
+  .home-container .future-tech .bottom-container .text-to-appear .titles-to-appear#benchmarking-title {
     top: 0%;
     right: 0px;
     -webkit-transform: none;
             transform: none;
   }
-  .home-container .future-tech .bottom-container .text-to-appear .titles-to-appear.data-title {
+  .home-container .future-tech .bottom-container .text-to-appear .titles-to-appear#data-title {
     top: 0%;
     left: 0px;
     -webkit-transform: none;
@@ -769,10 +769,10 @@ ul.aligned-list {
   .home-container .future-tech .bottom-container .titles-to-appear h3 {
     font-size: 24pt;
   }
-  .home-container .future-tech .bottom-container .titles-to-appear.benchmarking-title {
+  .home-container .future-tech .bottom-container .titles-to-appear#benchmarking-title {
     right: -50pt;
   }
-  .home-container .future-tech .bottom-container .titles-to-appear.data-title {
+  .home-container .future-tech .bottom-container .titles-to-appear#data-title {
     left: -50pt;
   }
   .home-container .future-tech .bottom-container .text-to-appear {
