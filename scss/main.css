@@ -7,6 +7,14 @@
 }
 
 @font-face {
+  font-family: "Taub-Sans";
+  src: url("../fonts/custom_font/TaubSans-Bold/TaubSans-Bold.eot");
+  src: url("../fonts/custom_font/TaubSans-Bold/TaubSans-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/custom_font/TaubSans-Bold/TaubSans-Bold.woff2") format("woff2"), url("../fonts/custom_font/TaubSans-Bold/TaubSans-Bold.woff") format("woff"), url("../fonts/custom_font/TaubSans-Bold/TaubSans-Bold.otf"), url("../fonts/custom_font/TaubSans-Bold/TaubSans-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
   font-family: "Taub-Display-C";
   src: url("../fonts/custom_font/Taub-Display-C/TaubDisplay-C.eot");
   src: url("../fonts/custom_font/Taub-Display-C/TaubDisplay-C.ttf") format("truetype"), url("../fonts/custom_font/Taub-Display-C/TaubDisplay-C.eot?#iefix") format("embedded-opentype"), url("../fonts/custom_font/Taub-Display-C/TaubDisplay-C.woff2") format("woff2"), url("../fonts/custom_font/Taub-Display-C/TaubDisplay-C.woff") format("woff"), url("../fonts/custom_font/TaubDisplayC/TaubDisplay-C.otf");
@@ -372,6 +380,8 @@ ul.aligned-list {
 .home-container .future-tech {
   padding-top: 40pt;
   width: 100vw;
+  background: url("../img/lines-background.png") no-repeat center center;
+  background-size: cover;
 }
 
 .home-container .future-tech .title-container h2 {
@@ -392,6 +402,7 @@ ul.aligned-list {
   text-align: center;
   font-size: 18pt;
   padding: 0pt 5pt 8pt;
+  font-weight: bold;
 }
 
 .home-container .future-tech .bottom-container .text-to-appear {
@@ -542,6 +553,7 @@ ul.aligned-list {
     -webkit-box-flex: 1;
     -ms-flex: 1;
     flex: 1;
+    height: 100vh;
   }
   .home-container .future-tech .bottom-container {
     width: 705px;
@@ -689,8 +701,8 @@ ul.aligned-list {
     position: absolute;
     top: 50%;
     left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -48%);
+            transform: translate(-50%, -48%);
   }
   .home-container .future-tech .bottom-container .middle-div .cellphone-circle-container .cellphone {
     padding-left: 18%;
@@ -730,12 +742,18 @@ ul.aligned-list {
     margin: 0 auto;
   }
   .home-container .future-tech .bottom-container .middle-div .icons-container {
-    width: 60pt;
-    height: 60pt;
+    width: 43pt;
+    height: 43pt;
   }
   .home-container .future-tech .bottom-container .middle-div .icons-container .blue-div {
-    width: 50pt;
-    height: 50pt;
+    width: 38pt;
+    height: 38pt;
+  }
+  .home-container .future-tech .bottom-container .middle-div .icons-container#executive-icon {
+    bottom: 0%;
+  }
+  .home-container .future-tech .bottom-container .middle-div .icons-container#benchmarking-icon {
+    right: 1%;
   }
   .home-container .future-tech .bottom-container .middle-div .cellphone-circle-container .cellphone::after {
     width: 300px;
@@ -744,6 +762,25 @@ ul.aligned-list {
   .home-container .future-tech .bottom-container .middle-div .cellphone-circle-container .cellphone::before {
     width: 270px;
     height: 270px;
+  }
+}
+
+@media (min-width: 1800px) {
+  .home-container .future-tech .bottom-container .titles-to-appear h3 {
+    font-size: 24pt;
+  }
+  .home-container .future-tech .bottom-container .titles-to-appear.benchmarking-title {
+    right: -50pt;
+  }
+  .home-container .future-tech .bottom-container .titles-to-appear.data-title {
+    left: -50pt;
+  }
+  .home-container .future-tech .bottom-container .text-to-appear {
+    right: -20%;
+    width: 56%;
+  }
+  .home-container .future-tech .bottom-container .text-to-appear p {
+    font-size: 14pt;
   }
 }
 

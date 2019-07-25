@@ -38,6 +38,17 @@
 }
 
 @font-face {
+  font-family: "Taub-Sans";
+  src: url("../fonts/custom_font/TaubSans-Bold/TaubSans-Bold.eot");
+  src: url("../fonts/custom_font/TaubSans-Bold/TaubSans-Bold.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/custom_font/TaubSans-Bold/TaubSans-Bold.woff2") format("woff2"),
+    url("../fonts/custom_font/TaubSans-Bold/TaubSans-Bold.woff") format("woff"), url("../fonts/custom_font/TaubSans-Bold/TaubSans-Bold.otf"),
+    url("../fonts/custom_font/TaubSans-Bold/TaubSans-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
   font-family: "Taub-Display-C";
   src: url("../fonts/custom_font/Taub-Display-C/TaubDisplay-C.eot");
   src: url("../fonts/custom_font/Taub-Display-C/TaubDisplay-C.ttf") format("truetype"),
