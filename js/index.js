@@ -223,6 +223,62 @@ $(document).ready(function() {
                 )
                 ;}, 20600);
 
+                // Benchmarking
+                setTimeout(function() {
+                  var tl14 = new TimelineLite();
+                  tl14
+                    .fromTo(
+                      ".titles-to-appear#benchmarking-icon", 1, { scale: 1, ease: Power1.easeOut }, { ease: Power1.easeOut, scale: 1.2 })
+                    .fromTo(
+                      ".titles-to-appear#benchmarking-title", 0.1, { scale: 1.2, delay: 0, ease: Power1.easeOut }, { ease: Power1.easeOut, scale: 0 })
+                      ;}, 21700);
+            
+                      setTimeout(function() {
+                        var tl15 = new TimelineLite();
+                  tl15
+                    .fromTo(
+                      ".text-to-appear .titles-to-appear-text#benchmarking-title-text", 1, { opacity: 0, ease: Power1.easeOut }, { ease: Power1.easeOut, opacity: 1 }
+                    )
+                    .fromTo(".text-to-appear p", 1, { opacity: 0, ease: Power1.easeOut }, { ease: Power1.easeOut, opacity: 1 })
+                    ;
+                  }, 22800);
+            
+                    setTimeout(function() {
+                      var tl16 = new TimelineLite();
+                tl16
+                    .fromTo(
+                      ".titles-to-appear#benchmarking-icon",
+                      1,
+                      { scale: 1.2, ease: Power1.easeOut },
+                      { ease: Power1.easeOut, scale: 1 }
+                    )
+                    .fromTo(
+                      ".titles-to-appear#benchmarking-title",
+                      0.1,
+                      { scale: 0, ease: Power1.easeOut },
+                      { ease: Power1.easeOut, scale: 1 }
+                    )
+                    ;}, 23900);
+            
+                    setTimeout(function() {
+                      var tl17 = new TimelineLite();
+                    tl17
+                    .fromTo(
+                      ".text-to-appear .titles-to-appear-text#benchmarking-title-text",
+                      1,
+                      { opacity: 1, ease: Power1.easeOut },
+                      { ease: Power1.easeOut, opacity: 0 },
+                      "-=0.1"
+                    )
+                    .fromTo(
+                      ".text-to-appear p",
+                      1,
+                      { opacity: 1, ease: Power1.easeOut },
+                      { ease: Power1.easeOut, opacity: 0 },
+                      "-=0.1"
+                    )
+                    ;}, 25000);
+
     setTimeout(function() {
       // completeCircle();
       new Vivus("straight-svg", { duration: 150, animTimingFunction: Vivus.EASE_IN });

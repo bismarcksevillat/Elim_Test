@@ -411,7 +411,7 @@ ul.aligned-list {
 
 .home-container .future-tech .bottom-container .text-to-appear {
   position: relative;
-  height: 220pt;
+  height: 180pt;
   width: 100%;
 }
 
@@ -421,7 +421,7 @@ ul.aligned-list {
   text-align: center;
   font-size: 12pt;
   position: absolute;
-  top: 120pt;
+  top: 50pt;
   bottom: auto;
   left: 0%;
   right: 0%;
