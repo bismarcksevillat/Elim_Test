@@ -41,93 +41,187 @@ $(document).ready(function() {
       .fromTo("#reporting-icon", 0.5, { y: 50, opacity: 0 }, { y: 0, opacity: 1 })
       .fromTo("#benchmarking-icon", 0.5, { x: -50, opacity: 0 }, { x: "25%", opacity: 1 })
       // Dotted line
-      .staggerFromTo("#dotted-svg path", 0.5, { opacity: 0, scale: 0 }, { opacity: 1, scale: 1, ease: Linear.easeNone }, 0.05)
+      .staggerFromTo(
+        "#dotted-svg path",
+        0.5,
+        { opacity: 0, scale: 0 },
+        { opacity: 1, scale: 1, ease: Linear.easeNone },
+        0.05
+      )
       .fromTo("#executive-title", 0.5, { y: -50, opacity: 0 }, { y: 0, opacity: 1 })
-           .fromTo("#data-title", 0.5, { x: 50, opacity: 0 }, { x: 0, opacity: 1 })
-           .fromTo("#reporting-title", 0.5, { y: 50, opacity: 0 }, { y: 0, opacity: 1 })
-           .fromTo("#benchmarking-title", 0.5, { x: -50, opacity: 0 }, { x: 0, opacity: 1 })
-     // Data
-     ;
-     
-    // setTimeout(function() {
-    //   var tl2 = new TimelineLite();
-    //   tl2.fromTo(".titles-to-appear#executive-title", 0.5, { y: -50, opacity: 0 }, { y: 0, opacity: 1 })
-    //        .fromTo(".titles-to-appear#data-title", 0.5, { x: 50, opacity: 0 }, { x: 0, opacity: 1 })
-    //        .fromTo(".titles-to-appear#reporting-title", 0.5, { y: 50, opacity: 0 }, { y: 0, opacity: 1 })
-    //        .fromTo(".titles-to-appear#benchmarking-title", 0.5, { x: -50, opacity: 0 }, { x: 0, opacity: 1 });
-    // }, 7000);
-
+      .fromTo("#data-title", 0.5, { x: 50, opacity: 0 }, { x: 0, opacity: 1 })
+      .fromTo("#reporting-title", 0.5, { y: 50, opacity: 0 }, { y: 0, opacity: 1 })
+      .fromTo("#benchmarking-title", 0.5, { x: -50, opacity: 0 }, { x: 0, opacity: 1 });
+  
+// Executive
     setTimeout(function() {
       var tl2 = new TimelineLite();
       tl2
         // Executive
-        .fromTo(".titles-to-appear#executive-icon", 1, {scale: 1, sease: Power1.easeOut}, {sease: Power1.easeOut, scale: 1.2})
-        .fromTo(".titles-to-appear#executive-title", 0.1, { scale: 1.2, delay: 0, ease: Power1.easeOut}, { ease: Power1.easeOut, scale: 0})
-        .fromTo(".text-to-appear .titles-to-appear-text#executive-title-text", 1, { opacity: 0 , ease: Power1.easeOut}, { ease: Power1.easeOut, opacity: 1})
-        .fromTo(".text-to-appear p", 1, { opacity: 0 , ease: Power1.easeOut}, { ease: Power1.easeOut, opacity: 1})
-        
-        .fromTo(".titles-to-appear#executive-icon", 1, {scale: 1.2, sease: Power1.easeOut}, {sease: Power1.easeOut, scale: 1})
-        .fromTo(".titles-to-appear#executive-title", 0.1, { scale: 0, ease: Power1.easeOut}, { ease: Power1.easeOut, scale: 1})
-        .fromTo(".text-to-appear .titles-to-appear-text#executive-title-text", 1, { opacity: 1 , ease: Power1.easeOut}, { ease: Power1.easeOut, opacity: 0}, "-=0.1")
-        .fromTo(".text-to-appear p", 1, { opacity: 1 , ease: Power1.easeOut}, { ease: Power1.easeOut, opacity: 0}, "-=0.1")
-        ;
-    }, 9000);
+        .fromTo(
+          ".titles-to-appear#executive-icon", 1, { scale: 1, ease: Power1.easeOut }, { ease: Power1.easeOut, scale: 1.2 })
+        .fromTo(
+          ".titles-to-appear#executive-title", 0.1, { scale: 1.2, delay: 0, ease: Power1.easeOut }, { ease: Power1.easeOut, scale: 0 })
+          ;}, 8500);
 
-    setTimeout(function() {
-      var tl3 = new TimelineLite();
+          setTimeout(function() {
+            var tl3 = new TimelineLite();
       tl3
-        // Executive
-        .fromTo(".titles-to-appear#data-icon", 1, {scale: 1}, {scale: 1.2})
-        .fromTo(".titles-to-appear#data-title", 0.1, { scale: 1.2, delay: 0}, { scale: 0})
-        .fromTo(".text-to-appear .titles-to-appear-text#data-title-text", 1, { opacity: 0 }, { opacity: 1})
-        .fromTo(".text-to-appear p", 1, { opacity: 0 }, { opacity: 1})
-        
-        .fromTo(".titles-to-appear#data-icon", 1, {scale: 1.2}, {scale: 1})
-        .fromTo(".titles-to-appear#data-title", 0.1, { scale: 0}, { scale: 1})
-        .fromTo(".text-to-appear .titles-to-appear-text#data-title-text", 1, { opacity: 1 }, { opacity: 0}, "-=0.2")
-        .fromTo(".text-to-appear p", 1, { opacity: 1 }, { opacity: 0}, "-=0.3")
+        .fromTo(
+          ".text-to-appear .titles-to-appear-text#executive-title-text", 1, { opacity: 0, ease: Power1.easeOut }, { ease: Power1.easeOut, opacity: 1 }
+        )
+        .fromTo(".text-to-appear p", 1, { opacity: 0, ease: Power1.easeOut }, { ease: Power1.easeOut, opacity: 1 })
         ;
-    }, 15000);
+      }, 9600);
+
+        setTimeout(function() {
+          var tl4 = new TimelineLite();
+    tl4
+        .fromTo(
+          ".titles-to-appear#executive-icon",
+          1,
+          { scale: 1.2, ease: Power1.easeOut },
+          { ease: Power1.easeOut, scale: 1 }
+        )
+        .fromTo(
+          ".titles-to-appear#executive-title",
+          0.1,
+          { scale: 0, ease: Power1.easeOut },
+          { ease: Power1.easeOut, scale: 1 }
+        )
+        ;}, 10700);
+
+        setTimeout(function() {
+          var tl5 = new TimelineLite();
+        tl5
+        .fromTo(
+          ".text-to-appear .titles-to-appear-text#executive-title-text",
+          1,
+          { opacity: 1, ease: Power1.easeOut },
+          { ease: Power1.easeOut, opacity: 0 },
+          "-=0.1"
+        )
+        .fromTo(
+          ".text-to-appear p",
+          1,
+          { opacity: 1, ease: Power1.easeOut },
+          { ease: Power1.easeOut, opacity: 0 },
+          "-=0.1"
+        )
+        ;}, 11800);
+
+        // Data
+        setTimeout(function() {
+          var tl6 = new TimelineLite();
+          tl6
+            .fromTo(
+              ".titles-to-appear#data-icon", 1, { scale: 1, ease: Power1.easeOut }, { ease: Power1.easeOut, scale: 1.2 })
+            .fromTo(
+              ".titles-to-appear#data-title", 0.1, { scale: 1.2, delay: 0, ease: Power1.easeOut }, { ease: Power1.easeOut, scale: 0 })
+              ;}, 12900);
+    
+              setTimeout(function() {
+                var tl7 = new TimelineLite();
+          tl7
+            .fromTo(
+              ".text-to-appear .titles-to-appear-text#data-title-text", 1, { opacity: 0, ease: Power1.easeOut }, { ease: Power1.easeOut, opacity: 1 }
+            )
+            .fromTo(".text-to-appear p", 1, { opacity: 0, ease: Power1.easeOut }, { ease: Power1.easeOut, opacity: 1 })
+            ;
+          }, 14000);
+    
+            setTimeout(function() {
+              var tl8 = new TimelineLite();
+        tl8
+            .fromTo(
+              ".titles-to-appear#data-icon",
+              1,
+              { scale: 1.2, ease: Power1.easeOut },
+              { ease: Power1.easeOut, scale: 1 }
+            )
+            .fromTo(
+              ".titles-to-appear#data-title",
+              0.1,
+              { scale: 0, ease: Power1.easeOut },
+              { ease: Power1.easeOut, scale: 1 }
+            )
+            ;}, 15100);
+    
+            setTimeout(function() {
+              var tl9 = new TimelineLite();
+            tl9
+            .fromTo(
+              ".text-to-appear .titles-to-appear-text#data-title-text",
+              1,
+              { opacity: 1, ease: Power1.easeOut },
+              { ease: Power1.easeOut, opacity: 0 },
+              "-=0.1"
+            )
+            .fromTo(
+              ".text-to-appear p",
+              1,
+              { opacity: 1, ease: Power1.easeOut },
+              { ease: Power1.easeOut, opacity: 0 },
+              "-=0.1"
+            )
+            ;}, 16200);
 
 
-    setTimeout(function() {
-      var tl4 = new TimelineLite();
-      tl4
-        // Executive
-        .fromTo(".titles-to-appear#reporting-icon", 1, {scale: 1}, {scale: 1.2})
-        .fromTo(".titles-to-appear#reporting-title", 0.1, { scale: 1.2, delay: 0}, { scale: 0})
-        .fromTo(".text-to-appear .titles-to-appear-text#reporting-title-text", 1, { opacity: 0 }, { opacity: 1})
-        .fromTo(".text-to-appear p", 1, { opacity: 0 }, { opacity: 1})
+            // Reporting
+            setTimeout(function() {
+              var tl10 = new TimelineLite();
+              tl10
+                .fromTo(
+                  ".titles-to-appear#reporting-icon", 1, { scale: 1, ease: Power1.easeOut }, { ease: Power1.easeOut, scale: 1.2 })
+                .fromTo(
+                  ".titles-to-appear#reporting-title", 0.1, { scale: 1.2, delay: 0, ease: Power1.easeOut }, { ease: Power1.easeOut, scale: 0 })
+                  ;}, 17300);
         
-        .fromTo(".titles-to-appear#reporting-icon", 1, {scale: 1.2}, {scale: 1})
-        .fromTo(".titles-to-appear#reporting-title", 0.1, { scale: 0}, { scale: 1})
-        .fromTo(".text-to-appear .titles-to-appear-text#reporting-title-text", 1, { opacity: 1 }, { opacity: 0}, "-=0.1")
-        .fromTo(".text-to-appear p", 1, { opacity: 1 }, { opacity: 0}, "-=0.1")
-        ;
-    }, 21000);
-
-
-    setTimeout(function() {
-      var tl5 = new TimelineLite();
-      tl5
-        // Executive
-        .fromTo(".titles-to-appear#benchmarking-icon", 1, {scale: 1}, {scale: 1.2})
-        .fromTo(".titles-to-appear#benchmarking-title", 0.1, { scale: 1.2, delay: 0}, { scale: 0})
-        .fromTo(".text-to-appear .titles-to-appear-text#benchmarking-title-text", 1, { opacity: 0 }, { opacity: 1})
-        .fromTo(".text-to-appear p", 1, { opacity: 0 }, { opacity: 1})
+                  setTimeout(function() {
+                    var tl11 = new TimelineLite();
+              tl11
+                .fromTo(
+                  ".text-to-appear .titles-to-appear-text#reporting-title-text", 1, { opacity: 0, ease: Power1.easeOut }, { ease: Power1.easeOut, opacity: 1 }
+                )
+                .fromTo(".text-to-appear p", 1, { opacity: 0, ease: Power1.easeOut }, { ease: Power1.easeOut, opacity: 1 })
+                ;
+              }, 18400);
         
-        .fromTo(".titles-to-appear#benchmarking-icon", 1, {scale: 1.2}, {scale: 1})
-        .fromTo(".titles-to-appear#benchmarking-title", 0.1, { scale: 0}, { scale: 1})
-        .fromTo(".text-to-appear .titles-to-appear-text#benchmarking-title-text", 1, { opacity: 1 }, { opacity: 0}, "-=0.1")
-        .fromTo(".text-to-appear p", 1, { opacity: 1 }, { opacity: 0}, "-=0.1")
-        ;
-    }, 27000);
-
-    // Reporting
-
-    // Benchmarking
-
-    // .fromTo("#straight-svg", 3, { drawSVG: 0 }, { drawSVG: "100%", ease: Linear.easeNone });
+                setTimeout(function() {
+                  var tl12 = new TimelineLite();
+            tl12
+                .fromTo(
+                  ".titles-to-appear#reporting-icon",
+                  1,
+                  { scale: 1.2, ease: Power1.easeOut },
+                  { ease: Power1.easeOut, scale: 1 }
+                )
+                .fromTo(
+                  ".titles-to-appear#reporting-title",
+                  0.1,
+                  { scale: 0, ease: Power1.easeOut },
+                  { ease: Power1.easeOut, scale: 1 }
+                )
+                ;}, 19510);
+        
+                setTimeout(function() {
+                  var tl13 = new TimelineLite();
+                tl13
+                .fromTo(
+                  ".text-to-appear .titles-to-appear-text#reporting-title-text",
+                  1,
+                  { opacity: 1, ease: Power1.easeOut },
+                  { ease: Power1.easeOut, opacity: 0 },
+                  "-=0.1"
+                )
+                .fromTo(
+                  ".text-to-appear p",
+                  1,
+                  { opacity: 1, ease: Power1.easeOut },
+                  { ease: Power1.easeOut, opacity: 0 },
+                  "-=0.1"
+                )
+                ;}, 20600);
 
     setTimeout(function() {
       // completeCircle();
