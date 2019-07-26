@@ -477,7 +477,7 @@ ul.aligned-list {
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -55%);
-          transform: translate(-50%, -55%);
+  transform: translate(-50%, -55%);
   border-radius: 100%;
   z-index: 1;
 }
@@ -491,7 +491,7 @@ ul.aligned-list {
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -56%);
-          transform: translate(-50%, -56%);
+  transform: translate(-50%, -56%);
   border-radius: 100%;
   z-index: 2;
 }
@@ -518,7 +518,7 @@ ul.aligned-list {
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   width: 95%;
   margin: 0 auto;
   display: none;
@@ -589,13 +589,13 @@ ul.aligned-list {
     top: 50%;
     right: 0px;
     -webkit-transform: translate(0%, -50%);
-            transform: translate(0%, -50%);
+    transform: translate(0%, -50%);
   }
   .home-container .future-tech .bottom-container .titles-to-appear#data-title {
     top: 50%;
     left: 0px;
     -webkit-transform: translate(0%, -50%);
-            transform: translate(0%, -50%);
+    transform: translate(0%, -50%);
   }
   .home-container .future-tech .bottom-container .text-to-appear {
     position: absolute;
@@ -634,14 +634,14 @@ ul.aligned-list {
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     z-index: 1;
     margin: 0 auto;
   }
@@ -655,21 +655,21 @@ ul.aligned-list {
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     margin: 0 auto;
   }
   .home-container .future-tech .bottom-container .middle-div .icons-container#data-icon {
     top: 50%;
     left: 0%;
     -webkit-transform: translate(-22%, -60%);
-            transform: translate(-22%, -60%);
+    transform: translate(-22%, -60%);
   }
   .home-container .future-tech .bottom-container .middle-div .icons-container#executive-icon {
     bottom: -2%;
@@ -685,14 +685,14 @@ ul.aligned-list {
     top: 50%;
     right: 0%;
     -webkit-transform: translate(25%, -52%);
-            transform: translate(25%, -52%);
+    transform: translate(25%, -52%);
   }
   .home-container .future-tech .bottom-container .middle-div .cellphone-circle-container {
     position: absolute;
     top: 50%;
     left: 50%;
     -webkit-transform: translate(-50%, -48%);
-            transform: translate(-50%, -48%);
+    transform: translate(-50%, -48%);
   }
   .home-container .future-tech .bottom-container .middle-div .cellphone-circle-container .cellphone {
     padding-left: 18%;

@@ -68,9 +68,9 @@ $(document).ready(function() {
             var tl3 = new TimelineLite();
       tl3
         .fromTo(
-          ".text-to-appear .titles-to-appear-text#executive-title-text", 1, { opacity: 0, ease: Power1.easeOut }, { ease: Power1.easeOut, opacity: 1 }
+          ".text-to-appear .titles-to-appear-text#executive-title-text", 1, { opacity: 0, x: -50, ease: Power1.easeOut }, { x: 0, ease: Power1.easeOut, opacity: 1 }
         )
-        .fromTo(".text-to-appear p", 1, { opacity: 0, ease: Power1.easeOut }, { ease: Power1.easeOut, opacity: 1 })
+        .fromTo(".text-to-appear p", 1, { opacity: 0, ease: Power1.easeOut, y: -10 }, { y:0, ease: Power1.easeOut, opacity: 1 })
         ;
       }, 9600);
 
@@ -99,14 +99,14 @@ $(document).ready(function() {
           1,
           { opacity: 1, ease: Power1.easeOut },
           { ease: Power1.easeOut, opacity: 0 },
-          "-=0.1"
+          "-=1"
         )
         .fromTo(
           ".text-to-appear p",
           1,
           { opacity: 1, ease: Power1.easeOut },
           { ease: Power1.easeOut, opacity: 0 },
-          "-=0.1"
+          "-=1"
         )
         ;}, 11800);
 
@@ -117,16 +117,16 @@ $(document).ready(function() {
             .fromTo(
               ".titles-to-appear#data-icon", 1, { scale: 1, ease: Power1.easeOut }, { ease: Power1.easeOut, scale: 1.2 })
             .fromTo(
-              ".titles-to-appear#data-title", 0.1, { scale: 1.2, delay: 0, ease: Power1.easeOut }, { ease: Power1.easeOut, scale: 0 })
+              ".titles-to-appear#data-title", 0.1, { scale: 1.2, delay: 0, ease: Power1.easeOut}, { ease: Power1.easeOut, scale: 0 })
               ;}, 12900);
     
               setTimeout(function() {
                 var tl7 = new TimelineLite();
           tl7
             .fromTo(
-              ".text-to-appear .titles-to-appear-text#data-title-text", 1, { opacity: 0, ease: Power1.easeOut }, { ease: Power1.easeOut, opacity: 1 }
+              ".text-to-appear .titles-to-appear-text#data-title-text", 1, { opacity: 0, ease: Power1.easeOut, x:-50 }, {x:0, ease: Power1.easeOut, opacity: 1 }
             )
-            .fromTo(".text-to-appear p", 1, { opacity: 0, ease: Power1.easeOut }, { ease: Power1.easeOut, opacity: 1 })
+            .fromTo(".text-to-appear p", 1, { opacity: 0, ease: Power1.easeOut, y: -10 }, { y:0, ease: Power1.easeOut, opacity: 1 })
             ;
           }, 14000);
     
@@ -155,14 +155,14 @@ $(document).ready(function() {
               1,
               { opacity: 1, ease: Power1.easeOut },
               { ease: Power1.easeOut, opacity: 0 },
-              "-=0.1"
+              "-=1"
             )
             .fromTo(
               ".text-to-appear p",
               1,
               { opacity: 1, ease: Power1.easeOut },
               { ease: Power1.easeOut, opacity: 0 },
-              "-=0.1"
+              "-=1"
             )
             ;}, 16200);
 
@@ -181,9 +181,9 @@ $(document).ready(function() {
                     var tl11 = new TimelineLite();
               tl11
                 .fromTo(
-                  ".text-to-appear .titles-to-appear-text#reporting-title-text", 1, { opacity: 0, ease: Power1.easeOut }, { ease: Power1.easeOut, opacity: 1 }
+                  ".text-to-appear .titles-to-appear-text#reporting-title-text", 1, { opacity: 0, ease: Power1.easeOut, x: -50}, { x:0, ease: Power1.easeOut, opacity: 1 }
                 )
-                .fromTo(".text-to-appear p", 1, { opacity: 0, ease: Power1.easeOut }, { ease: Power1.easeOut, opacity: 1 })
+                .fromTo(".text-to-appear p", 1, { opacity: 0, ease: Power1.easeOut, y: -10 }, { y:0, ease: Power1.easeOut, opacity: 1 })
                 ;
               }, 18400);
         
@@ -212,14 +212,14 @@ $(document).ready(function() {
                   1,
                   { opacity: 1, ease: Power1.easeOut },
                   { ease: Power1.easeOut, opacity: 0 },
-                  "-=0.1"
+                  "-=1"
                 )
                 .fromTo(
                   ".text-to-appear p",
                   1,
                   { opacity: 1, ease: Power1.easeOut },
                   { ease: Power1.easeOut, opacity: 0 },
-                  "-=0.1"
+                  "-=1"
                 )
                 ;}, 20600);
 
@@ -237,9 +237,9 @@ $(document).ready(function() {
                         var tl15 = new TimelineLite();
                   tl15
                     .fromTo(
-                      ".text-to-appear .titles-to-appear-text#benchmarking-title-text", 1, { opacity: 0, ease: Power1.easeOut }, { ease: Power1.easeOut, opacity: 1 }
+                      ".text-to-appear .titles-to-appear-text#benchmarking-title-text", 1, { opacity: 0, ease: Power1.easeOut, x: -50 }, { x:0, ease: Power1.easeOut, opacity: 1 }
                     )
-                    .fromTo(".text-to-appear p", 1, { opacity: 0, ease: Power1.easeOut }, { ease: Power1.easeOut, opacity: 1 })
+                    .fromTo(".text-to-appear p", 1, { opacity: 0, ease: Power1.easeOut, y: -10 }, { y: 0, ease: Power1.easeOut, opacity: 1 })
                     ;
                   }, 22800);
             
@@ -268,14 +268,14 @@ $(document).ready(function() {
                       1,
                       { opacity: 1, ease: Power1.easeOut },
                       { ease: Power1.easeOut, opacity: 0 },
-                      "-=0.1"
+                      "-=1"
                     )
                     .fromTo(
                       ".text-to-appear p",
                       1,
                       { opacity: 1, ease: Power1.easeOut },
                       { ease: Power1.easeOut, opacity: 0 },
-                      "-=0.1"
+                      "-=1"
                     )
                     ;}, 25000);
 
