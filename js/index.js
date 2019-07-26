@@ -84,8 +84,8 @@ $(document).ready(function() {
         
         .fromTo(".titles-to-appear#data-icon", 1, {scale: 1.2}, {scale: 1})
         .fromTo(".titles-to-appear#data-title", 0.1, { scale: 0}, { scale: 1})
-        .fromTo(".text-to-appear .titles-to-appear-text#data-title-text", 1, { opacity: 1 }, { opacity: 0}, "-=0.1")
-        .fromTo(".text-to-appear p", 1, { opacity: 1 }, { opacity: 0}, "-=0.1")
+        .fromTo(".text-to-appear .titles-to-appear-text#data-title-text", 1, { opacity: 1 }, { opacity: 0}, "-=0.2")
+        .fromTo(".text-to-appear p", 1, { opacity: 1 }, { opacity: 0}, "-=0.3")
         ;
     }, 15000);
 
